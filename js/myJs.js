@@ -15,7 +15,7 @@ function firstQuestion(){
     $('.content').hide();
     Swal.fire({
         title: 'He luu nhok!',
-        text: 'Anh có điều này muốn hỏi nhok nhớ phải trả lời thật lòng nhaaa.',
+        text: 'Anh có điều này muốn hỏi nhok nhớ phải trả lời thật lòng nhaaa. Cấm dối trá dưới mọi hình thức!.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì anh đẹp trai vl hỏi thừa :D ";
+    var text = " Tại vì anh đẹp trai, hỏi thừa :D ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -114,7 +114,7 @@ $('#yes').click(function() {
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tớ <3'
+        confirmButtonText: 'Gửi cho Anh <3'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
