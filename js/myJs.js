@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu nhok!',
-        text: 'Anh có điều này muốn hỏi nhok nhớ phải trả lời thật lòng nhaaa. Cấm dối trá dưới mọi hình thức!.',
+        title: 'Chào em!',
+        text: 'Anh có điều này muốn hỏi em nhớ phải trả lời thật lòng nhaaa. Cấm dối trá dưới mọi hình thức!.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì anh đẹp trai, hỏi thừa :D ";
+    var text = " Tại vì anh vui tính, dễ gần, hỏi thừa :D ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho anh biết lí do nhok thích anh đi :vvvv',
+        title: 'Nói cho anh biết lí do em thích anh đi :vvvv',
         html: true,
         width: 900,
         padding: '3em',
@@ -109,7 +109,7 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại lém :<<",
+        cancelButtonText: "suy nghĩ lại :<<",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
@@ -121,8 +121,8 @@ $('#yes').click(function() {
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Anh biết mà ^^ Yêu nhok <3 <3',
-                text: "Tối nay anh qua đón nhok đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho anh đi nàoooooo",
+                title: 'Anh biết mà ^^ Yêu em <3 <3',
+                text: "Tối nay anh qua đón em đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho anh đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.facebook.com/viRuSS.ShEG';
